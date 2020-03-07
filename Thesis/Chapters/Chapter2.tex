@@ -1,0 +1,114 @@
+%!TEX root = ../thesis.tex
+%*******************************************************************************
+%****************************** Second Chapter *********************************
+%*******************************************************************************
+
+\chapter{Literature review}
+\lhead{Chapter 2. \emph{Literature review}}
+
+\newcommand\norm[1]{\left\lVert#1\right\rVert}
+\newcommand{\argmax}{\arg\!\max}
+
+
+\ifpdf
+    \graphicspath{{Chapter2/Figs/Raster/}{Chapter2/Figs/PDF/}{Chapter2/Figs/}}
+\else
+    \graphicspath{{Chapter2/Figs/Vector/}{Chapter2/Figs/}}
+\fi
+
+
+\section{Introduction}
+
+Under a large sample size, the population covariance matrix can be accurately estimated by the sample covariance matrix (maximum likelihood and related unbiased estimator). Consider a vector of random variables, $\textbf{X} = (X_1,X_2, ... ,X_p)$, drawn from a $p$-variate normal distribution with mean vector, $\boldsymbol{\mu}$, and covariance matrix, $\boldsymbol{\Sigma}$. The multivariate probability density function of $\textbf{X}$ can be written as
+
+ \begin{equation}
+ f(\textbf{X};\boldsymbol{\mu},\boldsymbol{\Sigma}) = \frac{1}{(2\pi)^\frac{p}{2}\left|\boldsymbol{\Sigma}\right|^\frac{1}{2}} \exp[{-\boldsymbol{(X-\mu)^t \Sigma^{-1} (X-\mu)}}],
+  \label{equ2.1}
+ \end{equation}
+where $\boldsymbol{\left|A\right|}$ represent the determinant of a matrix $\boldsymbol{A}$ and $\boldsymbol{A^t}$ represent the transpose of a matrix $\boldsymbol{A}$. However, in practice, the true covariance matrix is unknown and we estimate it from the sample data. The most common approach is to use an estimate which maximize the following log likelihood function:
+\begin{equation}
+\log L(\boldsymbol{X};\boldsymbol{\Sigma})= Const - \frac{n}{2} \log \left|\boldsymbol{\Sigma}\right|-\frac{1}{2}\boldsymbol{X^t \Sigma^{-1} X}. 
+\label{equ2.2} 
+\end{equation}  
+ Note that, in equation \ref{equ2.2}, without loss of generality, we assume the mean vector $\boldsymbol{\mu}= \textbf{0}$. After differentiating equation \ref{equ2.2} with respect to $\boldsymbol{\Sigma}$ and equating it to zero, we obtain the maximum likelihood estimate of covariance matrix given by $\widehat{\boldsymbol{\Sigma}}=\frac{1}{n}\boldsymbol{X^t X}$. The related unbiased estimate is given by $\boldsymbol{S=\frac{n}{n-1} \widehat{\Sigma}}$. It is noteworthy that when the number of samples is very large, both estimators become equal. Moreover, these estimators of the covariance matrix have some desirable properties When the sample size is large. First, their eigenvalues are closely related to their population counterpart. Second, both estimators are positive definite matrices so they can be inverted to obtain the estimate of the inverse covariance matrix, $\boldsymbol{\Sigma}^{-1}$.
+
+      
+      However, in high-dimensional settings, the classical multivariate techniques which uses the sample covariance matrix or its inverse is a key ingredient either fails to work or becomes unreliable. Because of the two undesirable properties of the sample covariance matrix. First, the sample covariance matrix cannot be inverted. Second, the sample covariance matrix contains a massive amount of an estimation error, which can make considerable adverse impacts on the estimation accuracy \citep{fan2016overview}.
+      
+       To overcome this problem, a number of methods have been proposed in the literature. One method is the Moore-Penrose generalized inverse proposed by \cite{penrose1955generalized}, which is based on the singular value decomposition (SVD). In high-dimensional data, ($p \gg n$) Moore-Penrose generalized inverse is often used to find the inverse of the sample covariance matrix $\boldsymbol{\hat{\Sigma}}$. To find the inverse of $\boldsymbol{\hat{\Sigma}}$ it is decomposed as $\boldsymbol{\hat{\Sigma}} = \boldsymbol{UDV^{t}}$, where $\boldsymbol{U}$ and $\boldsymbol{V}$ are the matrices of orthonormal eigenvectors and $\boldsymbol{D}$ is the diagonal matrix with diagonal elements equal to the square root of the eigenvalues of $\boldsymbol{\hat{\Sigma}\hat{\Sigma^{t}}}$. Moore-Penrose generalized can be achieved by using the equation
+\begin{equation}
+\boldsymbol{\hat{\Sigma}^{-1}} = \boldsymbol{VD^{-1}U^{t}},
+\label{equ2.3}
+\end{equation}       
+where all the zero diagonal elements of $\boldsymbol{D}$ and the corresponding eigenvectors in $\boldsymbol{U}$ and $\boldsymbol{V}$ are removed before finding generalized inverse given in equation \ref{equ2.3}. It is interesting to note that Moore-Penrose generalized inverse reduces to the standard matrix inverse whenever $rank$($\boldsymbol{\hat{\Sigma}}$) $\geq p$ \citep{golub1965calculating}. Other regularization procedures closely related to our work are explored in the following sections. 
+
+\section{Shrinkage estimation}   
+Historically, the idea of shrinkage estimation is going back to \cite{stein1956inadmissibility} who observed that the estimator can be improved through shrinking towards the structure target. The same idea is used by the \cite{ledoit2004well} who proposed the procedure to find an estimator by the convex combination of the sample covariance matrix and a target matrix. This convex combination is as follows:   
+\begin{equation}
+\boldsymbol{\hat{\Sigma}_{\gamma}} = \gamma \boldsymbol{T} + (1-\gamma) \boldsymbol{\hat{\Sigma}},
+\end{equation}       
+where $\boldsymbol{\hat{\Sigma}_{\gamma}}$ is the improved estimator and $\boldsymbol{T}$, $\boldsymbol{\hat{\Sigma}}$ are the target matrix and maximum likelihood estimator of the covariance matrix respectively. They provided a procedure to find shrinkage intensity $\gamma$ by minimizing the expected square loss function, given by          
+\begin{equation}
+R(\gamma) = E \norm{\boldsymbol{\hat{\Sigma}_{\gamma}} - \boldsymbol{\hat{\Sigma}}}^2,
+ \label{equ2.4}
+\end{equation}           
+where expected square loss function is the measure of mean square error. Interestingly, there is no need to assume that the random variables $p$ follows any specific distribution. But this procedure assumed to exist the first four moments \citep{schafer2005shrinkage}. It can be shown that this improved estimator is well-conditioned \citep{ledoit2004well}.     
+
+\cite{schafer2005shrinkage} followed the same procedure for computing the shrinkage parameter. To compute $\gamma$ minimizing equation \ref{equ2.4} with respect to $\gamma$ we get,
+\begin{equation}
+\hat{\gamma} = \frac{\sum_{i=1}^{p} \sum_{j=1}^{p} var(\hat{\sigma}_{ij}) - cov(t_{ij}, \hat{\sigma}_{ij})- bias(\hat{\sigma}_{ij}) E(t_{ij} - \sigma_{ij})^{2}}{\sum_{i=1}^{p} \sum_{j=1}^{p} E [t_{ij} - \sigma_{ij}]^{2}},
+  \label{equ2.5}
+\end{equation}
+they described some insights into how the $\gamma$ should be chosen and derived this analytic equation to obtain shrinkage intensity for six commonly used targets for detailed discussion see \citep{schafer2005shrinkage}. Note that if $\boldsymbol{\hat{\Sigma}}$ is an unbiased estimator then equation \ref{equ2.5} reduces to
+\begin{equation}
+\hat{\gamma} = \frac{\sum_{i=1}^{p} \sum_{j=1}^{p} var(\hat{\sigma}_{ij}) - cov(t_{ij}, \hat{\sigma}_{ij})}{\sum_{i=1}^{p} \sum_{j=1}^{p} E [t_{ij} - \sigma_{ij}]^{2}}.
+\end{equation}
+Using the identity matrix where all the variables are normalized to have unit variance and its scalar multiple is relatively easy as target $\boldsymbol{T}$ from both analytical and computational perspective. Which is employed by \cite{ledoit2003improved} and \cite{ledoit2004well}. They also demonstrated that the improved estimator is well-conditioned and more accurate than the sample covariance matrix. 
+
+Another target matrix which was the main focus of \cite{schafer2005shrinkage} is the diagonal matrix $\boldsymbol{\hat{\Sigma}_{d}}$ with unequal variances on the main diagonal. This $\boldsymbol{\hat{\Sigma}_{d}}$ only shrinks the eignvalues and keeps the eigenvectors unchanged. In this case $\hat{\gamma}$ is given by
+\begin{equation}
+\hat{\gamma} = \frac{\sum_{i \neq j}^{p} var(s_{ij})}{\sum_{i \neq j}^{p} E(s_{ij}^2)}.
+\end{equation}  
+  To compute $\hat{\gamma}$ in this case requares $p$ parameters to be estimated which is complicated as compare to the identity matrix. Note that both identity matrix and $\boldsymbol{\hat{\Sigma}_{d}}$ are positive and sample covariance matrix is the semi-positive definite taking convex combination of one of these targets and sample covariance matrix would result in a positive definite matrix. 
+
+\section{Ridge regularization of the covariance matrix}
+As described, in high dimensional settings ($ p \gg n$) the maximum likelihood estimator of the covariance matrix become singular and ill-conditioned. A method so called ridge regularization, proposed by \cite{warton2008penalized} resolve this problem by using 
+\begin{equation}
+\hat{\boldsymbol{\Sigma}}_{\kappa} = \hat{\boldsymbol{\Sigma}} + \kappa \boldsymbol{I},
+\label{risge_est}
+\end{equation}
+where $\kappa$ is the ridge parameter, $\boldsymbol{I}$ is the $p \times p$ identity matrix and $\hat{\boldsymbol{\Sigma}}_{\kappa}$ is the regularized estimator of the covariance matrix. When the variables are at different scales, it is more appropriate to regularize on the standard scale. In this case \cite{warton2008penalized} regularize the sample estimator of the correlation matrix, $\boldsymbol{R}$, which can be obtained by rescaling equation \ref{risge_est} as 
+\begin{equation}
+\hat{\boldsymbol{R}}_{\gamma} = \gamma \hat{\boldsymbol{R}} + (1-\gamma) \boldsymbol{I},
+\label{corr}
+\end{equation}
+where $\gamma = \frac{1}{1+\kappa} \in (0,1]$ is the ridge parameter and $\boldsymbol{\hat{R}}_{\gamma}$ is the regularized estimator of the correlation matrix. It is the shrinkage estimator as it shrinks $\boldsymbol{\hat{R}}$ toward the identity matrix and also guaranteed to be a positive definite matrix for any value of $\gamma \in (0,1]$. One interesting property of $\boldsymbol{\hat{R}}_{\gamma}$ is that it can be derived from the penalized likelihood function for multivariate normal data, with penalty term proportional to tr($\boldsymbol{R^{-1}})$ see \citep{warton2008penalized} for analytical derivation. The penalize likelihood function is given by
+\begin{equation}
+\log L(\boldsymbol{X};\boldsymbol{\Sigma})= Const - \frac{n}{2} \log\left|\boldsymbol{\Sigma}\right|-\frac{1}{2}\boldsymbol{X^t \Sigma^{-1} X} - \frac{c}{2} tr(\boldsymbol{R^{-1}}).
+\end{equation}
+Using equation \ref{corr} the regularized estimator of $\boldsymbol{\Sigma}_{\gamma}$ can be obtained as
+\begin{equation}
+\hat{\boldsymbol{\Sigma}}_{\gamma} = \hat{\boldsymbol{\Sigma}}_{d}^{1/2} (\gamma \hat{\boldsymbol{R}} + (1-\gamma) \boldsymbol{I}) \hat{\boldsymbol{\Sigma}}_{d}^{1/2}.
+\end{equation}
+
+
+To estimate regularization parameter $\gamma$, \cite{warton2008penalized} is using $k$-fold cross validation. In this case $k$-fold cross validation is done by dividing the whole sample of size $n$ of a matrix $\textbf{X}$ into $\textbf{k}$ sub-samples denoted by $\textbf{X} = [\textbf{X}_{1}^{T}, \textbf{X}_{2}^{T}, ...,\textbf{X}_{\textbf{K}}^{T}]$. In which the $K$-th sub-samples, that is, $\textbf{X}_{K}$ is used as the validation data and the rest of the observations are used as training data. For example, a total sample size is 20 and we divide it into 5 equal parts in which each sub-sample consist of 4 observations. The training data, $\textbf{X}_{K}$, is used to compute its mean, covariance matrix and correlation matrix denoted by $\boldsymbol{\mu}^{\setminus k}$, $\boldsymbol{\Sigma_{\gamma}}^{\setminus k}$ and $\boldsymbol{R}^{\setminus k}$ respectively. The observed likelihood is then calculated for each $\textbf{X}_{K}$. And then estimate $\gamma$ by maximizing the cross validation likelihood function which is given by
+
+\begin{align}
+\begin{split}
+-2 \log L(\boldsymbol{\mu}^{\setminus k}, \boldsymbol{\Sigma}^{\setminus k};\boldsymbol{X})= {}& (n_{k}p)  \log(2\pi) + n_{k} \log\left|\boldsymbol{\hat{\Sigma}}_{\gamma}^{\setminus k}\right|  \\ &
++ tr[\boldsymbol{(X_{k}- \boldsymbol{\mu}^{\setminus k}) (\hat{\Sigma}_{\gamma}^{\setminus k})^{-1} (X_{k} - \boldsymbol{\mu}^{\setminus k})}].
+\end{split}
+\end{align}
+
+
+To obtain an optimal value of $\gamma$ we use the following equation.
+
+\begin{equation}
+\gamma =  \argmax_\gamma \sum_{k=1}^{K} \log L(\boldsymbol{\mu}^{\setminus k}, \boldsymbol{\Sigma}^{\setminus k};\boldsymbol{X_{k}}).
+\end{equation} 
+
+\section{Covariance matrix regularization via lasso}
+The Inverse of a covariance matrix of the multivariate normal distribution is used to find out conditional independence relationship between two variables given the rest of $p-2$. These conditional dependencies can be visualized graphically called the Gaussian graphical model. However, the population inverse covariance matrix is unknown and we estimate it by the two well known estimators (maximum likelihood estimator and its unbiased version). These two estimators cannot produce estimated elements exactly eqaul to zero, no matter what the sample size is if they are zero in the true covariance matrix. Which makes the model unnecessarily more complex. This complexity and noise of the inverse covariance matrix can be reduced by setting some of the elements equal to zero, a technique called covariance selection proposed by \cite{dempster1972covariance}.  
+
+The lasso regularization was first introduced by \cite{tibshirani1996regression} in the regression context in order to enhance the accuracy and interpretability of the model by setting some of the coefficients exactly equal to zero and shrink important coefficient toward zero. This idea was used by \cite{yuan2007model} and \cite{d2008first} using the penalized log-likelihood method and derived different lasso algorithms for the sparse covariance selection. A fastest algorithm is the graphical lasso algorithm (Glasso) introduced by \cite{friedman2008sparse} for estimating the inverse covariance matrix by applying the lasso penalty. The lasso problem can be solved by using the coordinate decent algorithm \citep{friedman2007pathwise}.  

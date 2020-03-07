@@ -1,0 +1,528 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Beerenwinkel%
+\ \protect \BOthers {.}}{%
+Beerenwinkel%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+beerenwinkel2007genetic}
+\APACinsertmetastar {%
+beerenwinkel2007genetic}%
+\begin{APACrefauthors}%
+Beerenwinkel, N.%
+, Antal, T.%
+, Dingli, D.%
+, Traulsen, A.%
+, Kinzler, K\BPBI W.%
+, Velculescu, V\BPBI E.%
+\BDBL {}Nowak, M\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Genetic progression and the waiting time to cancer}
+  {Genetic progression and the waiting time to cancer}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{PLoS computational biology}{3}{11}{e225}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+d'Aspremont%
+, Banerjee%
+\BCBL {}\ \BBA {} El~Ghaoui%
+}{%
+d'Aspremont%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+d2008first}
+\APACinsertmetastar {%
+d2008first}%
+\begin{APACrefauthors}%
+d'Aspremont, A.%
+, Banerjee, O.%
+\BCBL {}\ \BBA {} El~Ghaoui, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {First-order methods for sparse covariance selection}
+  {First-order methods for sparse covariance selection}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{SIAM Journal on Matrix Analysis and
+  Applications}{30}{1}{56--66}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dempster%
+}{%
+Dempster%
+}{%
+{\protect \APACyear {1972}}%
+}]{%
+dempster1972covariance}
+\APACinsertmetastar {%
+dempster1972covariance}%
+\begin{APACrefauthors}%
+Dempster, A\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1972}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Covariance selection} {Covariance selection}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Biometrics}{}{}{157--175}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Eisen%
+, Spellman%
+, Brown%
+\BCBL {}\ \BBA {} Botstein%
+}{%
+Eisen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1998}}%
+}]{%
+eisen1998cluster}
+\APACinsertmetastar {%
+eisen1998cluster}%
+\begin{APACrefauthors}%
+Eisen, M\BPBI B.%
+, Spellman, P\BPBI T.%
+, Brown, P\BPBI O.%
+\BCBL {}\ \BBA {} Botstein, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Cluster analysis and display of genome-wide expression
+  patterns} {Cluster analysis and display of genome-wide expression
+  patterns}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the National Academy of
+  Sciences}{95}{25}{14863--14868}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fan%
+, Liao%
+\BCBL {}\ \BBA {} Liu%
+}{%
+Fan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+fan2016overview}
+\APACinsertmetastar {%
+fan2016overview}%
+\begin{APACrefauthors}%
+Fan, J.%
+, Liao, Y.%
+\BCBL {}\ \BBA {} Liu, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {An overview of the estimation of large covariance and
+  precision matrices} {An overview of the estimation of large covariance and
+  precision matrices}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Econometrics Journal}{19}{1}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Friedman%
+, Hastie%
+, H{\"o}fling%
+, Tibshirani%
+\BCBL {}\ \protect \BOthers {.}}{%
+Friedman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+friedman2007pathwise}
+\APACinsertmetastar {%
+friedman2007pathwise}%
+\begin{APACrefauthors}%
+Friedman, J.%
+, Hastie, T.%
+, H{\"o}fling, H.%
+, Tibshirani, R.%
+\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Pathwise coordinate optimization} {Pathwise coordinate
+  optimization}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Annals of Applied Statistics}{1}{2}{302--332}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Friedman%
+, Hastie%
+\BCBL {}\ \BBA {} Tibshirani%
+}{%
+Friedman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+friedman2008sparse}
+\APACinsertmetastar {%
+friedman2008sparse}%
+\begin{APACrefauthors}%
+Friedman, J.%
+, Hastie, T.%
+\BCBL {}\ \BBA {} Tibshirani, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Sparse inverse covariance estimation with the graphical
+  lasso} {Sparse inverse covariance estimation with the graphical
+  lasso}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Biostatistics}{9}{3}{432--441}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Golub%
+\ \BBA {} Kahan%
+}{%
+Golub%
+\ \BBA {} Kahan%
+}{%
+{\protect \APACyear {1965}}%
+}]{%
+golub1965calculating}
+\APACinsertmetastar {%
+golub1965calculating}%
+\begin{APACrefauthors}%
+Golub, G.%
+\BCBT {}\ \BBA {} Kahan, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1965}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Calculating the singular values and pseudo-inverse of a
+  matrix} {Calculating the singular values and pseudo-inverse of a
+  matrix}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the Society for Industrial and Applied
+  Mathematics, Series B: Numerical Analysis}{2}{2}{205--224}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ledoit%
+\ \BBA {} Wolf%
+}{%
+Ledoit%
+\ \BBA {} Wolf%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+ledoit2003improved}
+\APACinsertmetastar {%
+ledoit2003improved}%
+\begin{APACrefauthors}%
+Ledoit, O.%
+\BCBT {}\ \BBA {} Wolf, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Improved estimation of the covariance matrix of stock
+  returns with an application to portfolio selection} {Improved estimation of
+  the covariance matrix of stock returns with an application to portfolio
+  selection}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of empirical finance}{10}{5}{603--621}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ledoit%
+\ \BBA {} Wolf%
+}{%
+Ledoit%
+\ \BBA {} Wolf%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+ledoit2004well}
+\APACinsertmetastar {%
+ledoit2004well}%
+\begin{APACrefauthors}%
+Ledoit, O.%
+\BCBT {}\ \BBA {} Wolf, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A well-conditioned estimator for large-dimensional
+  covariance matrices} {A well-conditioned estimator for large-dimensional
+  covariance matrices}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of multivariate analysis}{88}{2}{365--411}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Penrose%
+}{%
+Penrose%
+}{%
+{\protect \APACyear {1955}}%
+}]{%
+penrose1955generalized}
+\APACinsertmetastar {%
+penrose1955generalized}%
+\begin{APACrefauthors}%
+Penrose, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1955}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A generalized inverse for matrices} {A generalized
+  inverse for matrices}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Mathematical proceedings of the Cambridge philosophical
+  society} {Mathematical proceedings of the cambridge philosophical society}\
+  (\BVOL~51, \BPGS\ 406--413).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Schaefer%
+\ \protect \BOthers {.}}{%
+Schaefer%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+schaefer2013corpcor}
+\APACinsertmetastar {%
+schaefer2013corpcor}%
+\begin{APACrefauthors}%
+Schaefer, J.%
+, Opgen-Rhein, R.%
+, Zuber, V.%
+, Ahdesm{\"a}ki, M.%
+, Duarte~Silva, A.%
+\BCBL {}\ \BBA {} Strimmer, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {corpcor: Efficient estimation of covariance and
+  (partial) correlation} {corpcor: Efficient estimation of covariance and
+  (partial) correlation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{R package version}{1}{6}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sch{\"a}fer%
+\ \BBA {} Strimmer%
+}{%
+Sch{\"a}fer%
+\ \BBA {} Strimmer%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+schafer2004empirical}
+\APACinsertmetastar {%
+schafer2004empirical}%
+\begin{APACrefauthors}%
+Sch{\"a}fer, J.%
+\BCBT {}\ \BBA {} Strimmer, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {An empirical Bayes approach to inferring large-scale
+  gene association networks} {An empirical bayes approach to inferring
+  large-scale gene association networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bioinformatics}{21}{6}{754--764}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sch{\"a}fer%
+\ \BBA {} Strimmer%
+}{%
+Sch{\"a}fer%
+\ \BBA {} Strimmer%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+schafer2005shrinkage}
+\APACinsertmetastar {%
+schafer2005shrinkage}%
+\begin{APACrefauthors}%
+Sch{\"a}fer, J.%
+\BCBT {}\ \BBA {} Strimmer, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A shrinkage approach to large-scale covariance matrix
+  estimation and implications for functional genomics} {A shrinkage approach to
+  large-scale covariance matrix estimation and implications for functional
+  genomics}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Statistical applications in genetics and molecular
+  biology}{4}{1}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Stein%
+\ \protect \BOthers {.}}{%
+Stein%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1956}}%
+}]{%
+stein1956inadmissibility}
+\APACinsertmetastar {%
+stein1956inadmissibility}%
+\begin{APACrefauthors}%
+Stein, C.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1956}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Inadmissibility of the usual estimator for the mean of a
+  multivariate normal distribution} {Inadmissibility of the usual estimator for
+  the mean of a multivariate normal distribution}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the Third Berkeley symposium on
+  mathematical statistics and probability} {Proceedings of the third berkeley
+  symposium on mathematical statistics and probability}\ (\BVOL~1, \BPGS\
+  197--206).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tamayo%
+\ \protect \BOthers {.}}{%
+Tamayo%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+tamayo1999interpreting}
+\APACinsertmetastar {%
+tamayo1999interpreting}%
+\begin{APACrefauthors}%
+Tamayo, P.%
+, Slonim, D.%
+, Mesirov, J.%
+, Zhu, Q.%
+, Kitareewan, S.%
+, Dmitrovsky, E.%
+\BDBL {}Golub, T\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Interpreting patterns of gene expression with
+  self-organizing maps: methods and application to hematopoietic
+  differentiation} {Interpreting patterns of gene expression with
+  self-organizing maps: methods and application to hematopoietic
+  differentiation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the National Academy of
+  Sciences}{96}{6}{2907--2912}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tibshirani%
+}{%
+Tibshirani%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+tibshirani1996regression}
+\APACinsertmetastar {%
+tibshirani1996regression}%
+\begin{APACrefauthors}%
+Tibshirani, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Regression shrinkage and selection via the lasso}
+  {Regression shrinkage and selection via the lasso}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the Royal Statistical Society. Series B
+  (Methodological)}{}{}{267--288}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Warton%
+}{%
+Warton%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+warton2008penalized}
+\APACinsertmetastar {%
+warton2008penalized}%
+\begin{APACrefauthors}%
+Warton, D\BPBI I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Penalized normal likelihood and ridge regularization of
+  correlation and covariance matrices} {Penalized normal likelihood and ridge
+  regularization of correlation and covariance matrices}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the American Statistical
+  Association}{103}{481}{340--349}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yuan%
+\ \BBA {} Lin%
+}{%
+Yuan%
+\ \BBA {} Lin%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+yuan2007model}
+\APACinsertmetastar {%
+yuan2007model}%
+\begin{APACrefauthors}%
+Yuan, M.%
+\BCBT {}\ \BBA {} Lin, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Model selection and estimation in the Gaussian graphical
+  model} {Model selection and estimation in the gaussian graphical
+  model}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Biometrika}{94}{1}{19--35}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

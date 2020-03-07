@@ -1,0 +1,24 @@
+\contentsline {chapter}{Abstract}{i}{dummy.1}
+\vspace {1em}
+\contentsline {chapter}{Acknowledgements}{ii}{dummy.2}
+\vspace {1em}
+\contentsline {chapter}{List of Figures}{v}{dummy.4}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.6}
+\contentsline {chapter}{\numberline {2}Literature review}{3}{chapter.8}
+\contentsline {section}{\numberline {2.1}Introduction}{3}{section.9}
+\contentsline {section}{\numberline {2.2}Shrinkage estimation}{4}{section.13}
+\contentsline {section}{\numberline {2.3}Ridge regularization of the covariance matrix}{6}{section.19}
+\contentsline {section}{\numberline {2.4}Covariance matrix regularization via lasso}{7}{section.26}
+\contentsline {chapter}{\numberline {3}Informative targets and regularization of covariance matrix using informative targets}{9}{chapter.27}
+\contentsline {section}{\numberline {3.1}Introduction}{9}{section.28}
+\contentsline {section}{\numberline {3.2}Estimation of Correlation parameter}{10}{section.30}
+\contentsline {section}{\numberline {3.3}Estimation of regularization parameter using normal likelihood}{13}{section.43}
+\contentsline {subsection}{\numberline {3.3.1}Sample properties of $\boldsymbol {\gamma }$}{15}{subsection.55}
+\contentsline {chapter}{\numberline {4}Simulation study}{17}{chapter.57}
+\contentsline {section}{\numberline {4.1}Introduction}{17}{section.58}
+\contentsline {section}{\numberline {4.2}Synthetic experiments}{17}{section.59}
+\contentsline {chapter}{\numberline {5}Conclusion}{26}{chapter.66}
+\vspace {2em}
+\contentsline {chapter}{\numberline {A}R codes for Figures}{28}{appendix.67}
+\vspace {2em}
+\contentsline {chapter}{References}{48}{dummy.1194}
